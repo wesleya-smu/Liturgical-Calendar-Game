@@ -14,11 +14,17 @@ function dragStart(event) {
 
 function drop(event) {
     const label = event.dataTransfer.getData("text/plain");
-    const correct = event.target.dataset.season === label;
+    const target = event.target;
+    const correct = target.dataset.season === label;
+
+    const labelEl = document.querySelector(`[data-label="${label}"]`);
 
     if (correct) {
         document.getElementById('ding').play();
-        event.target.appendChild(document.querySelector(`[data-label="${label}"]`));
+        labelEl.style.left = target.style.left;
+        labelEl.style.top = target.style.top;
+        labelEl.setAttribute("draggable", "false");
+        labelEl.style.backgroundColor = "#d4edda";
     } else {
         document.getElementById('buzzer').play();
         showRedX();
@@ -31,4 +37,13 @@ function showRedX() {
     xOverlay.className = "red-x";
     document.body.appendChild(xOverlay);
     setTimeout(() => xOverlay.remove(), 1500);
+}
+
+function resetGame() {
+    document.querySelectorAll('.draggable').forEach((el, index) => {
+        el.setAttribute("draggable", "true");
+        el.style.left = "1in";
+        el.style.top = (1 + index) + "in";
+        el.style.backgroundColor = "lightyellow";
+    });
 }
