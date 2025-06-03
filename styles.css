@@ -1,7 +1,11 @@
 
-.diagram {
+.diagram-container {
     position: relative;
+    display: inline-block;
+}
+.diagram {
     width: 100%;
+    display: block;
 }
 .drop-zone {
     position: absolute;
