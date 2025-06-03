@@ -1,11 +1,14 @@
 
 .diagram-container {
     position: relative;
-    display: inline-block;
+    width: 2400px;
+    height: 1633px;
+    overflow: hidden;
 }
 .diagram {
-    width: 100%;
-    display: block;
+    position: absolute;
+    width: 2400px;
+    height: 1633px;
 }
 .drop-zone {
     position: absolute;

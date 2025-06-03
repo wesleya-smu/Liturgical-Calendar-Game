@@ -42,8 +42,8 @@ function showRedX() {
 function resetGame() {
     document.querySelectorAll('.draggable').forEach((el, index) => {
         el.setAttribute("draggable", "true");
-        el.style.left = "1in";
-        el.style.top = (1 + index) + "in";
+        el.style.left = "50px";
+        el.style.top = (50 + index * 60) + "px";
         el.style.backgroundColor = "lightyellow";
     });
 }
