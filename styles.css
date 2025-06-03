@@ -1,0 +1,27 @@
+
+.diagram {
+    position: relative;
+    width: 100%;
+}
+.drop-zone {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+}
+.draggable {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: move;
+    position: absolute;
+    background: lightyellow;
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+.red-x {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 10rem;
+    color: red;
+    z-index: 999;
+}

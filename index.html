@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liturgical Calendar Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameStage1" class="game-stage">
+        <img src="Liturgical Year Diagram - No Labels 3x.png" class="diagram" />
+        <div class="drop-zone" data-season="Advent" style="left: 12.4in; top: 4.5in;"></div>
+        <div class="drop-zone" data-season="Christmas" style="left: 12.75in; top: 6.35in;"></div>
+        <div class="drop-zone" data-season="Ordinary Time 1" style="left: 12.55in; top: 8.45in;"></div>
+        <div class="drop-zone" data-season="Lent" style="left: 8.75in; top: 8.95in;"></div>
+        <div class="drop-zone" data-season="Easter" style="left: 5in; top: 7.35in;"></div>
+        <div class="drop-zone" data-season="Ordinary Time 2" style="left: 7.45in; top: 3.7in;"></div>
+
+        <div class="draggable" draggable="true" data-label="Advent" style="left: 1in; top: 1in;">Advent</div>
+        <div class="draggable" draggable="true" data-label="Christmas" style="left: 1in; top: 2in;">Christmas</div>
+        <div class="draggable" draggable="true" data-label="Ordinary Time 1" style="left: 1in; top: 3in;">Ordinary Time</div>
+        <div class="draggable" draggable="true" data-label="Lent" style="left: 1in; top: 4in;">Lent</div>
+        <div class="draggable" draggable="true" data-label="Easter" style="left: 1in; top: 5in;">Easter</div>
+        <div class="draggable" draggable="true" data-label="Ordinary Time 2" style="left: 1in; top: 6in;">Ordinary Time</div>
+    </div>
+    <audio id="ding" src="ding.mp3" preload="auto"></audio>
+    <audio id="buzzer" src="buzzer.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
