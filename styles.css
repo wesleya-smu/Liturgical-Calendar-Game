@@ -5,13 +5,10 @@
 }
 .drop-zone {
     position: absolute;
-    width: 200px;
-    height: 50px;
-    background: rgba(200,200,200,0.4);
+    width: 160px;
+    height: 35px;
+    background: rgba(200,200,200,0.3);
     border: 2px dashed gray;
-    text-align: center;
-    padding-top: 15px;
-    font-size: 14px;
 }
 .draggable {
     font-size: 20px;

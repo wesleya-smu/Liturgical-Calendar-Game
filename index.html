@@ -11,13 +11,15 @@
     <button onclick="resetGame()">Reset</button>
     <div id="gameStage1" class="game-stage">
         <img src="Liturgical Year Diagram - No Labels 3x.png" class="diagram" />
-        <div class="drop-zone" data-season="Advent" style="left: 12.4in; top: 4.5in;">Advent</div>
-        <div class="drop-zone" data-season="Christmas" style="left: 12.75in; top: 6.35in;">Christmas</div>
-        <div class="drop-zone" data-season="Ordinary Time (Sundays after Epiphany)" style="left: 12.55in; top: 8.45in;">Ordinary Time (Sundays after Epiphany)</div>
-        <div class="drop-zone" data-season="Lent" style="left: 8.75in; top: 8.95in;">Lent</div>
-        <div class="drop-zone" data-season="Easter" style="left: 5in; top: 7.35in;">Easter</div>
-        <div class="drop-zone" data-season="Ordinary Time (Sundays after Pentecost)" style="left: 7.45in; top: 3.7in;">Ordinary Time (Sundays after Pentecost)</div>
+        <!-- Refined drop zones (blank and smaller, with precise positioning) -->
+        <div class="drop-zone" data-season="Advent" style="left: 12.4in; top: 4.5in;"></div>
+        <div class="drop-zone" data-season="Christmas" style="left: 12.75in; top: 6.35in;"></div>
+        <div class="drop-zone" data-season="Ordinary Time (Sundays after Epiphany)" style="left: 12.55in; top: 8.45in;"></div>
+        <div class="drop-zone" data-season="Lent" style="left: 8.75in; top: 8.95in;"></div>
+        <div class="drop-zone" data-season="Easter" style="left: 5in; top: 7.35in;"></div>
+        <div class="drop-zone" data-season="Ordinary Time (Sundays after Pentecost)" style="left: 7.45in; top: 3.7in;"></div>
 
+        <!-- Draggable season labels -->
         <div class="draggable" draggable="true" data-label="Advent" style="left: 1in; top: 1in;">Advent</div>
         <div class="draggable" draggable="true" data-label="Christmas" style="left: 1in; top: 2in;">Christmas</div>
         <div class="draggable" draggable="true" data-label="Ordinary Time (Sundays after Epiphany)" style="left: 1in; top: 3in;">Ordinary Time (Sundays after Epiphany)</div>
